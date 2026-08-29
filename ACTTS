@@ -30,7 +30,7 @@ Tab:CreateToggle({
         if value then
             task.spawn(function()
                 while collecting do
-                    for i = 1, 100000000000000000 do
+                    for i = 1, 50000 do
                         if not collecting then break end
                         ReplicatedStorage.Remotes.CollectLeaf:FireServer(i)
                         task.wait()
