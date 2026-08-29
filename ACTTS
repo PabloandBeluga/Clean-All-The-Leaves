@@ -33,7 +33,7 @@ Tab:CreateToggle({
                     for i = 1, 100000000000000000 do
                         if not collecting then break end
                         ReplicatedStorage.Remotes.CollectLeaf:FireServer(i)
-                        task.wait(0.50)
+                        task.wait(0.001)
                     end
                     -- loops back to the for loop automatically
                 end
